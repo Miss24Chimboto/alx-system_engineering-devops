@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 #Echo "Best School" and "Hi" using while loop and if statement
-x=1
-while [ $x -le 9 ]
+x=0
+while [ $x -le 10 ]
 do
-	echo "Best School"
-	x=$(( x + 1 ))
-if [[ $x -eq 8 ]]
+if [[ $x -eq 9 ]]
 then
 	echo "Hi"
 else
 	echo "Best School"
 fi
+
+((x++))
+done
