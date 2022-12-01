@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Bash script for pinging an IP address
+#+ It should:
+#+ 1. Accept a string as an argument
+#+ 2. Display Usage: 5-is_the_host_on_the_network {IP_ADDRESS} if no argument passed
+#+ 3. Ping the IP 5 times
+
+if [ "$#" -eq 0 ]; then
+   echo 'Usage: 5-is_the_host_on_the_network {IP_ADDRESS}'
+else
+	ping -c 5 "$1"
+fi
