@@ -1,8 +1,6 @@
 <h1>Web server</h1>
 <h2>A Bash script that transfers a file from our client to a server:</h2>
-<ul>
-<li>Accepts 4 parameters<li>
-</ul>
+<ul>Accepts 4 parameters</ul>
 <ol>
 <li>The path to the file to be transferred</li>
 <li>The IP of the server we want to transfer the file to</li>
