@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Install Nginx and the root dir to display "Hello World!"
+sudo apt update
+sudo apt install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo ufw enable
+sudo service nginx start
+echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
