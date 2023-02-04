@@ -3,6 +3,6 @@
 #Must use pkill
 
 exec { 'kill_process':
-  command     => 'pkill killmenow',
-  path        => '/usr/bin:/usr/sbin:/bin',
+  command => 'pkill killmenow',
+  path => '/usr/bin:/usr/sbin:/bin',
 }
